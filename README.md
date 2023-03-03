@@ -1,3 +1,4 @@
+Tic-Tac-Toe 
 # board-game
 This is a simple implementation of the classic game of Tic Tac Toe using Python. The game is played on a 3x3 board, and the goal is to get three in a row (horizontally, vertically, or diagonally) before your opponent does.
 
