@@ -1,35 +1,32 @@
-Tic-Tac-Toe 
-# board-game
-This is a simple implementation of the classic game of Tic Tac Toe using Python. The game is played on a 3x3 board, and the goal is to get three in a row (horizontally, vertically, or diagonally) before your opponent does.
+井字游戏（Tic-Tac-Toe）Python版
+这是一个使用Python编写的井字游戏，也称为Tic-Tac-Toe。这个游戏可以在命令行中进行，支持单人和双人模式。
 
-Getting Started
-To run the game, you'll need to have Python 3 installed on your machine. You can download the latest version of Python from the official website here.
+游戏规则
+井字游戏是一种由两个玩家轮流下棋（一个是“X”，另一个是“O”）的游戏，直到一个玩家占据了整个棋盘或者两个玩家都无法再下棋为止。玩家需要在一个3x3的棋盘上，通过将自己的棋子连成一条直线（横向、纵向或者对角线）来获胜。
 
-Once you have Python installed, you can download the tic_tac_toe.py file from this repository to your local machine. Open a terminal or command prompt and navigate to the directory where the file is saved.
-
-To start the game, simply run the following command:
+如何运行游戏
+确保你的电脑已经安装了Python 3，然后打开终端或命令行，进入游戏代码所在的目录，输入以下命令：
 
 Copy code
 python tic_tac_toe.py
-The game will start and you'll be prompted to enter your moves by specifying the row and column numbers of the square you want to mark.
+这将启动游戏，你可以按照命令行中的提示进行游戏。
 
-Game Rules
-The game is played on a 3x3 board. Players take turns marking a square on the board with their symbol (either "X" or "O"). The first player to get three in a row (horizontally, vertically, or diagonally) wins the game. If all squares are filled without a winner, the game ends in a tie.
+单人模式
+在单人模式中，玩家将与计算机进行对战。计算机会使用随机的策略下棋。
 
-Project Structure
-The tic_tac_toe.py file contains the entire game logic. The game is implemented using four functions:
+双人模式
+在双人模式中，两个玩家将在同一个终端或命令行中对战。玩家将轮流输入坐标来下棋。
 
-print_board prints the current state of the board to the console.
-check_win checks if a player has won the game.
-tic_tac_toe is the main game loop that handles user input and updates the board.
-Finally, the tic_tac_toe function is called to start the game.
-The code is well-commented and easy to follow, so feel free to read through it and understand how the game works.
+文件结构
+tic_tac_toe.py: 包含井字游戏的代码。
+test_tic_tac_toe.py: 包含对井字游戏代码的单元测试。
+单元测试
+这个项目包含了对代码的单元测试，你可以通过运行以下命令来进行测试：
 
-Customization
-The game can be easily customized and extended to add new features or game modes. For example, you could add a feature that allows players to choose their symbols ("X" or "O"), or you could modify the game to be played on a larger board. The code is open-source and licensed under the MIT License, so feel free to use and modify it as you like.
+Copy code
+python test_tic_tac_toe.py
+联系方式
+如果你有任何问题或建议，请联系我：your-email@example.com。
 
-Contributing
-Contributions are welcome! If you find a bug or have an idea for a new feature, feel free to submit a pull request or open an issue.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+许可证
+这个项目使用 MIT 许可证。请查看 LICENSE 文件获取更多信息。
